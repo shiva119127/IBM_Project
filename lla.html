@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Language Learning App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>LangLearn</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#flashcards">Flashcards</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#progress">Progress</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>Learn Languages Smarter & Faster</h1>
+        <p>
+            Improve your vocabulary using interactive flashcards,
+            pronunciation support, and smart quizzes.
+        </p>
+        <button onclick="document.getElementById('flashcards').scrollIntoView()">
+            Start Learning
+        </button>
+    </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features">
+        <div class="feature-card">
+            <h3>📖 Flashcards</h3>
+            <p>Learn words with meanings in a visually rich format.</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔊 Pronunciation</h3>
+            <p>Listen to native-like pronunciation using Speech API.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📝 Quiz Mode</h3>
+            <p>Test yourself and strengthen your memory.</p>
+        </div>
+        <div class="feature-card">
+            <h3>📊 Progress Tracking</h3>
+            <p>Track your learning improvement in real time.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FLASHCARDS -->
+<section id="flashcards">
+    <h2>Flashcards</h2>
+    <div class="flashcard-box">
+        <h3 id="word">Happy</h3>
+        <p id="meaning">Feeling joy</p>
+        <button onclick="speak()">🔊 Pronounce</button>
+        <button onclick="nextWord()">Next</button>
+    </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+    <h2>Quiz Yourself</h2>
+    <div class="quiz-box">
+        <h3 id="quizWord">Word</h3>
+        <input type="text" id="answer" placeholder="Type meaning here">
+        <button onclick="check()">Submit</button>
+        <p id="result"></p>
+    </div>
+</section>
+
+<!-- PROGRESS -->
+<div class="progress-box" id="progress">
+    <h3>Your Progress</h3>
+    <p id="progressText">Score: 0 / 0</p>
+</div>
+
+<footer>
+    © 2026 LangLearn • Built with HTML, CSS & JavaScript
+</footer>
+
+<script src="script.js">
+</script>
+
+</body>
+</html>
