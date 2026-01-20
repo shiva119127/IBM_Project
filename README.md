@@ -30,7 +30,7 @@
 
 You can view the app in action:
 
-![LangLearn Screenshot](https://images.unsplash.com/photo-1524995997946-a1c2e315a42f)
+![LangLearn Screenshot](demo.png)
 
 > **Note:** Replace the above image with an actual screenshot of your app for the final README.
 
