@@ -191,3 +191,116 @@ footer{
     text-align:center;
     font-size:14px;
 }
+@media (max-width: 992px) {
+
+    nav {
+        padding: 0 25px;
+    }
+
+    .hero {
+        padding: 120px 40px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    section {
+        padding: 80px 40px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile Devices (≤ 768px) */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav h2 {
+        margin-bottom: 10px;
+    }
+
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 8px 12px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 120px 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 70px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    /* FLASHCARD & QUIZ */
+    .flashcard-box,
+    .quiz-box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .flashcard-box h3 {
+        font-size: 26px;
+    }
+
+    /* PROGRESS */
+    .progress-box h3 {
+        font-size: 28px;
+    }
+}
+
+/* Small Phones (≤ 480px) */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+
+    .flashcard-box button,
+    .quiz-box button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
